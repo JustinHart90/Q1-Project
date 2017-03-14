@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "HQ",
+  "description": "This extension loads a custom dashboard when a user adds a new tab or window",
+  "version": "1.0",
+
+  "icons": {
+    "128": "./html/icon.png"
+  },
+  "browser_action": {
+    "default_title": "HQ - New tab explorer"
+  },
+  "chrome_url_overrides": {
+    "newtab": "./html/index.html"
+  },
+  "permissions": [
+    "bookmarks",
+    "identity"
+  ]
+}
+
+/* HQ
+   HeadQuarters (if the screen is divided into quarters)
+   Homebase
+   Home Explorer
+   Home Express */
