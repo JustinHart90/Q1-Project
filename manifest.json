@@ -16,7 +16,9 @@
   },
   "permissions": [
     "bookmarks",
-    "identity"
+    "identity",
+    "geolocation",
+    "http://*.google.com/"
   ]
 }
 

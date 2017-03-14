@@ -15,7 +15,7 @@ function getNews(){
 
     while (resultsCounter < 6) {
       for (var i = 0; i < newsArray.length; i++) {
-        if (newsArray[i].data.link_flair_text === "Answered" && !newsArray[i].data.title.includes("/r/")) {
+        if (newsArray[i].data.link_flair_text === "Answered" && !newsArray[i].data.title.includes("/r/") && !newsArray[i].data.title.includes("Why are people randomly spoiling the ending of Logan in the comments?")) {
           resultsTitle.push(newsArray[i].data.title);
           resultsUrl.push(newsArray[i].data.url);
           resultsCounter++
