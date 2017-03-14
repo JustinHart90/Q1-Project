@@ -1,0 +1,125 @@
+html {
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  /*content: "";*/
+  /*background: url("background-image-17.jpg");*/
+  /*background-color: black;*/
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+div.icon-block {
+  padding: 1px 5px 5px 1px;
+  margin-top: 5px;
+  background-color: black;
+  opacity: 1.0;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#footer, footer.page-footer {
+  text-align: center;
+  background-color: gray;
+  padding: 0px;
+  margin-bottom: 0px;
+  bottom: 0px;
+}
+
+.container {
+  width: 90%;
+}
+
+nav.lighten-1 {
+  background-color: black;
+  opacity: 0.5;
+}
+
+ul#mobile-demo {
+  z-index: 4;
+  opacity: 1.0;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+div.row {
+  margin: 0px 0px 5px 0px;
+  padding: 5px 0px 0px 0;
+  /*background-color: black;*/
+  /*opacity: 0.6;*/
+  font-weight: bold;
+
+}
+
+h5 {
+  color: white;
+  font-family: roboto, arial;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+
+h5.center {
+  margin: 0px;
+  padding: 10px 0 0 0;
+  line-height: 1;
+}
+
+div > a#logo-container {
+  font-family: fantasy;
+}
+
+div.bookmarks {
+  margin-left: 7%;
+  font-size: 2em;
+  width: 85%;
+}
+
+div#button-container {
+  width:  7%;
+}
+
+/* Reddit Api - NEWS */
+span#title1.title, span#title2.title, span#title3.title, span#title4.title, span#title5.title {
+ font-size: 1.2em;
+}
+
+ul.collection {
+  background-color: black;
+  opacity: 0.95;
+  border: none;
+  margin: 3px 0 3px;
+}
+
+li.collection-item.avatar {
+  left: 5px;
+  padding: 5px 20px 5px 65px;
+}
+
+div.section {
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+/*div.widget-background {
+  background-color: black;
+  opacity: 1.0;
+  z-index: 1;
+}*/
+
+/* YouTube api*/
+div#player {
+  display: inline-block;
+}
