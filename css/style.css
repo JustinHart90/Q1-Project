@@ -63,7 +63,7 @@ span#title1.title, span#title2.title, span#title3.title, span#title4.title, span
  font-size: 1.2em;
 }
 
-span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title {
+span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title, span#bi-1.title, span#bi-2.title, span#bi-3.title, span#bi-4.title, span#bi-5.title  {
   font-size: 1.2em;
   margin-left: 10px;
   padding-top: 7px;
@@ -96,6 +96,15 @@ li.thumbnail.collection-item.avatar {
   min-height: 75px;
 }
 
+li.collection-item.avatar.biNews {
+  left: 5px;
+  margin: 0px;
+  padding: 5px 5px 5px 5px;
+  display: inline-flex;
+  line-height: 1.25;
+  min-height: 75px;
+}
+
 div.section {
   margin-bottom: 5px;
   padding: 0px;
@@ -114,4 +123,9 @@ div#player {
 
 nav div ul li a {
   font-family: roboto, arial;
+}
+
+a.newsUrl {
+  height: 90px;
+  width: 120px;
 }
