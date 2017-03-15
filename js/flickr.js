@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  getURL()
+  getURL();
+  $('#changeBackground').click( function () {
+    getURL();
+  })
 });
 
 function getURL(){
@@ -33,7 +36,7 @@ function getURL(){
         var secretId = result.secret;
         backgroundImageUrl = "https://farm" + farmId + ".staticflickr.com/" + serverId + "/" + photoID + "_" + secretId + ".jpg";
         // changeBackground(backgroundImageUrl);
-        $('.html').css({'background-image': 'url(' + backgroundImageUrl + ')', 'background-size' : 'cover'});
+        $('body').css({'background-image': 'url(' + backgroundImageUrl + ')', 'background-size' : 'cover'});
         console.log(backgroundImageUrl);
         // return;
       }
@@ -43,11 +46,3 @@ function getURL(){
     console.log(error);
   })
 }
-
-
-// https://farm1.staticflickr.com/2/1418878_1e92283336_m.jpg
-// farm-id: 1
-// server-id: 2
-// photo-id: 1418878
-// secret: 1e92283336
-// size: m

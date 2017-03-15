@@ -26,8 +26,6 @@ $(document).ready(function() {
           var title1 = data.items[0].snippet.title;
           var thumb1 = data.items[0].snippet.thumbnails.default.url;
           var thumbImage = data.items[0].snippet.thumbnails.default;
-          console.log(thumb1);
-          console.log(thumbImage);
 
           var title2 = data.items[1].snippet.title;
           var thumb2 = data.items[1].snippet.thumbnails.default.url;
