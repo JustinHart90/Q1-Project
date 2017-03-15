@@ -1,34 +1,15 @@
 body {
-  /*content: "";*/
-  /*background: url("background-image-17.jpg");*/
-  /*background-color: black;*/
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  opacity: 0.95;
   z-index: -1;
 }
 
 div.icon-block {
   padding: 1px 5px 5px 1px;
   margin-top: 5px;
-  background-color: black;
-  opacity: 1.0;
+  background-color: none;
 }
 .icon-block .material-icons {
 	font-size: inherit;
-}
-
-#footer, footer.page-footer {
-  text-align: center;
-  background-color: gray;
-  padding: 0px;
-  margin-bottom: 0px;
-  bottom: 0px;
 }
 
 .container {
@@ -40,36 +21,27 @@ nav.lighten-1 {
   opacity: 0.5;
 }
 
-ul#mobile-demo {
-  z-index: 4;
-  opacity: 1.0;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
 div.row {
   margin: 0px 0px 5px 0px;
   padding: 5px 0px 0px 0;
-  /*background-color: black;*/
-  /*opacity: 0.6;*/
-  font-weight: bold;
-
-}
-
-h5 {
-  color: white;
-  font-family: roboto, arial;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 2.5em;
 }
 
 h5.center {
-  margin: 0px;
-  padding: 10px 0 0 0;
+  color: white;
+  background-color: black;
+  font-family: roboto, arial;
+  font-size: 1.85em;
+  font-weight: bold;
+  opacity: 0.5;
+  width: 98.5%;
+  margin: 0px 0px 0px 5px;
+}
+
+h5.center {
+  padding: 5px 0px 2px 0px;
   line-height: 1;
+  /*justify-content: center;
+  text-align: center;*/
 }
 
 div > a#logo-container {
@@ -94,19 +66,25 @@ span#title1.title, span#title2.title, span#title3.title, span#title4.title, span
 span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title {
   font-size: 1.2em;
   margin-left: 10px;
+  padding-top: 7px;
 }
 
 ul.collection {
-  background-color: black;
+  background-color: none;
   opacity: 0.95;
   border: none;
-  margin: 3px 0 3px;
+  margin: 0px 0px 3px;
 }
 
 li.collection-item.avatar {
   left: 5px;
   padding: 5px 20px 5px 5px;
   line-height: 1.25;
+  background-color: black;
+  font-family: roboto, arial;
+  color: white;
+  opacity: 0.95;
+  min-height: 75px;
 }
 
 li.thumbnail.collection-item.avatar {
@@ -115,6 +93,7 @@ li.thumbnail.collection-item.avatar {
   padding: 0px 5px 0px 0px;
   display: inline-flex;
   line-height: 1.25;
+  min-height: 75px;
 }
 
 div.section {
@@ -131,4 +110,8 @@ div.section {
 /* YouTube api*/
 div#player {
   display: inline-block;
+}
+
+nav div ul li a {
+  font-family: roboto, arial;
 }
