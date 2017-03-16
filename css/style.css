@@ -12,13 +12,9 @@ div.icon-block {
 	font-size: inherit;
 }
 
-.container.innerContainer {
-  width: 100%;
-}
-
-.container.col.l12 {
+div.col.l12 {
   margin-top: 15px;
-  width: 90%;
+  width: 95%;
 }
 
 nav.lighten-1 {
@@ -43,7 +39,10 @@ h5.center {
   font-weight: bold;
   opacity: 0.9;
   width: 98.5%;
+  max-width: 370px;
+  min-width: 370px;
   margin: 0px 0px 0px 5px;
+  height: 80px;
 }
 
 h5.center {
@@ -69,6 +68,12 @@ span#title1.title, span#title2.title, span#title3.title, span#title4.title, span
 }
 
 span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title, span#bi-1.title, span#bi-2.title, span#bi-3.title, span#bi-4.title, span#bi-5.title, span#bloom-1.title, span#bloom-2.title, span#bloom-3.title, span#bloom-4.title, span#bloom-5.title  {
+  font-size: 1.2em;
+  margin-left: 10px;
+  padding-top: 7px;
+}
+
+span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title {
   font-size: 1.2em;
   margin-left: 10px;
   padding-top: 7px;
@@ -142,7 +147,7 @@ li.thumbnail.collection-item.avatar {
   min-height: 50px;
 }
 
-li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews {
+li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collection-item.avatar.espnNews {
   left: 5px;
   margin: 0px;
   padding: 5px 5px 5px 5px;
@@ -174,4 +179,8 @@ nav div ul li a {
 a.newsUrl {
   height: 90px;
   width: 120px;
+}
+
+.buffer-below-icon {
+  margin-bottom: 10px;
 }
