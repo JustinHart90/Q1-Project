@@ -8,57 +8,54 @@ function getBInews(){
   $.get(url)
   .then( function(data) {
     var newsArray = data.articles;
+    resultsTitle = [];
+    resultsDescr = [];
+    resultsUrl = [];
+    resultsImgUrl = [];
 
-    var title_1 = newsArray[0].title;
-    var description_1 = newsArray[0].description;
-    var newsUrl_1 = newsArray[0].url;
-    var imageUrl_1 = newsArray[0].urlToImage;
+    for (var i = 0; i < 5; i++) {
+      resultsTitle.push(newsArray[i].title);
+      resultsDescr.push(newsArray[i].description);
+      resultsUrl.push(getSecureUrl(newsArray[i].url));
+      resultsImgUrl.push(getSecureUrl(newsArray[i].urlToImage));
+    }
 
-    var title_2 = newsArray[1].title;
-    var description_2 = newsArray[1].description;
-    var newsUrl_2 = newsArray[1].url;
-    var imageUrl_2 = newsArray[1].urlToImage;
+    $('#bi-1').text(resultsTitle[0]);
+    $('#bi-2').text(resultsTitle[1]);
+    $('#bi-3').text(resultsTitle[2]);
+    $('#bi-4').text(resultsTitle[3]);
+    $('#bi-5').text(resultsTitle[4]);
 
-    var title_3 = newsArray[2].title;
-    var description_3 = newsArray[2].description;
-    var newsUrl_3 = newsArray[2].url;
-    var imageUrl_3 = newsArray[2].urlToImage;
+    $('#newsUrl-1').attr("title", resultsDescr[0]);
+    $('#newsUrl-2').attr("title", resultsDescr[1]);
+    $('#newsUrl-3').attr("title", resultsDescr[2]);
+    $('#newsUrl-4').attr("title", resultsDescr[3]);
+    $('#newsUrl-5').attr("title", resultsDescr[4]);
 
-    var title_4 = newsArray[3].title;
-    var description_4 = newsArray[3].description;
-    var newsUrl_4 = newsArray[3].url;
-    var imageUrl_4 = newsArray[3].urlToImage;
+    $('#newsUrl-1').attr("href", resultsUrl[0]);
+    $('#newsUrl-2').attr("href", resultsUrl[1]);
+    $('#newsUrl-3').attr("href", resultsUrl[2]);
+    $('#newsUrl-4').attr("href", resultsUrl[3]);
+    $('#newsUrl-5').attr("href", resultsUrl[4]);
 
-    var title_5 = newsArray[4].title;
-    var description_5 = newsArray[4].description;
-    var newsUrl_5 = newsArray[4].url;
-    var imageUrl_5 = newsArray[4].urlToImage;
-
-    $('#bi-1').text(title_1);
-    $('#bi-2').text(title_2);
-    $('#bi-3').text(title_3);
-    $('#bi-4').text(title_4);
-    $('#bi-5').text(title_5);
-
-    $('#newsUrl-1').attr("title", description_1);
-    $('#newsUrl-2').attr("title", description_2);
-    $('#newsUrl-3').attr("title", description_3);
-    $('#newsUrl-4').attr("title", description_4);
-    $('#newsUrl-5').attr("title", description_5);
-
-    $('#newsUrl-1').attr("href", newsUrl_1);
-    $('#newsUrl-2').attr("href", newsUrl_2);
-    $('#newsUrl-3').attr("href", newsUrl_3);
-    $('#newsUrl-4').attr("href", newsUrl_4);
-    $('#newsUrl-5').attr("href", newsUrl_5);
-
-    $('#imageUrl-1').attr("src", imageUrl_1);
-    $('#imageUrl-2').attr("src", imageUrl_2);
-    $('#imageUrl-3').attr("src", imageUrl_3);
-    $('#imageUrl-4').attr("src", imageUrl_4);
-    $('#imageUrl-5').attr("src", imageUrl_5);
+    $('#imageUrl-1').attr("src", resultsImgUrl[0]);
+    $('#imageUrl-2').attr("src", resultsImgUrl[1]);
+    $('#imageUrl-3').attr("src", resultsImgUrl[2]);
+    $('#imageUrl-4').attr("src", resultsImgUrl[3]);
+    $('#imageUrl-5').attr("src", resultsImgUrl[4]);
   })
   .catch(function(error) {
     console.log(error);
   })
+}
+
+function getSecureUrl(url) {
+  if (url.indexOf("https") == 0) {
+    return url;
+  } else if (url.indexOf("http") == 0) {
+    url = url.replace('http://', 'https://');
+    return url;
+  } else {
+    console.log("url error!");
+  }
 }

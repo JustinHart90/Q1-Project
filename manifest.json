@@ -6,13 +6,13 @@
   "version": "1.0",
 
   "icons": {
-    "128": "./html/icon.png"
+    "128": "html/icon.png"
   },
   "browser_action": {
     "default_title": "HQ - New tab explorer"
   },
   "chrome_url_overrides": {
-    "newtab": "./html/index.html"
+    "newtab": "index.html"
   },
   "permissions": [
     "bookmarks",
