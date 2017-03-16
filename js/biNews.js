@@ -8,10 +8,10 @@ function getBInews(){
   $.get(url)
   .then( function(data) {
     var newsArray = data.articles;
-    resultsTitle = [];
-    resultsDescr = [];
-    resultsUrl = [];
-    resultsImgUrl = [];
+    var resultsTitle = [];
+    var resultsDescr = [];
+    var resultsUrl = [];
+    var resultsImgUrl = [];
 
     for (var i = 0; i < 5; i++) {
       resultsTitle.push(newsArray[i].title);
