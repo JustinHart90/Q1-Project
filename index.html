@@ -16,7 +16,9 @@
       <nav class="lighten-1" role="navigation">
           <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">hq</a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#" id="changeBackground">Change Background</a></li>
+              <li id="temperature"></li>
+              <li><img src="" id="weather-icon"></li>
+              <li><a id="changeBackground">Change Background</a></li>
               <li><a href="#" id="reset">Reload Page</a></li>
             </ul>
 
@@ -67,6 +69,37 @@
                       <li class="collection-item avatar">
                         <a id="link5" target="_blank" title="" href=""><i class="material-icons circle green">language</i></a>
                         <span class="title" id="title5"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="collapsible" id="buzzfeed-widget" data-collapsible="accordion">
+                <li class="buffer-below-icon">
+                  <div class="collapsible-header re-style" background-color="none">
+                    <h5 class="center"><img src="http://www.userlogos.org/files/logos/yarsrevenge/BuzzFeed.png" height="70" padding="0px" width="auto"></h5>
+                  </div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item avatar buzzNews">
+                        <a class="newsUrl" id="buzzUrl-1" target="_blank" title=""  href=""><img id="buzzImgUrl-1" border="0" alt="Image 1" src="" width="120" height="75"></a>
+                        <span class="title" id="buzz-1"></span>
+                      </li>
+                      <li class="collection-item avatar buzzNews">
+                        <a class="newsUrl" id="buzzUrl-2" target="_blank" title=""  href=""><img id="buzzImgUrl-2" border="0" alt="Image 2" src="" width="120" height="75"></a>
+                        <span class="title" id="buzz-2"></span>
+                      </li>
+                      <li class="collection-item avatar buzzNews">
+                        <a class="newsUrl" id="buzzUrl-3" target="_blank" title=""  href=""><img id="buzzImgUrl-3" border="0" alt="Image 3" src="" width="120" height="75"></a>
+                        <span class="title" id="buzz-3"></span>
+                      </li>
+                      <li class="collection-item avatar buzzNews">
+                        <a class="newsUrl" id="buzzUrl-4" target="_blank" title=""  href=""><img id="buzzImgUrl-4" border="0" alt="Image 4" src="" width="120" height="75"></a>
+                        <span class="title" id="buzz-4"></span>
+                      </li>
+                      <li class="collection-item avatar buzzNews">
+                        <a class="newsUrl" id="buzzUrl-5" target="_blank" title=""  href=""><img id="buzzImgUrl-5" border="0" alt="Image 5" src="" width="120" height="75"></a>
+                        <span class="title" id="buzz-5"></span>
                       </li>
                     </ul>
                   </div>
@@ -171,7 +204,6 @@
                       </li>
                     </ul>
                   </div>
-
               </li>
             </ul>
             <ul class="collapsible" id="bloom-widget" data-collapsible="accordion">
@@ -226,6 +258,8 @@
   <script type="text/javascript" src="js/biNews.js"></script>
   <script type="text/javascript" src="js/bloomberg.js"></script>
   <script type="text/javascript" src="js/espn.js"></script>
+  <script type="text/javascript" src="js/buzzfeed.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
   <!-- <script type="text/javascript" src="../js/bookmarks.js"></script> -->
 
   </body>

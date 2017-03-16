@@ -13,13 +13,27 @@ div.icon-block {
 }
 
 div.col.l12 {
-  margin-top: 15px;
+  margin-top: 10px;
   width: 95%;
 }
 
 nav.lighten-1 {
   background-color: black;
   opacity: 0.5;
+  align-items: center;
+}
+
+#temperature {
+  color: white;
+  font-size: 1.25em;
+  margin-right: 10px;
+}
+
+#weather-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 60px;
 }
 
 a#logo-container.brand-logo {
@@ -73,7 +87,7 @@ span#player1.title, span#player2.title, span#player3.title, span#player4.title, 
   padding-top: 7px;
 }
 
-span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title {
+span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title, span#buzz-1.title, span#buzz-2.title, span#buzz-3.title, span#buzz-4.title, span#buzz-5.title {
   font-size: 1.2em;
   margin-left: 10px;
   padding-top: 7px;
@@ -147,7 +161,7 @@ li.thumbnail.collection-item.avatar {
   min-height: 50px;
 }
 
-li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collection-item.avatar.espnNews {
+li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collection-item.avatar.espnNews, li.collection-item.avatar.buzzNews {
   left: 5px;
   margin: 0px;
   padding: 5px 5px 5px 5px;
