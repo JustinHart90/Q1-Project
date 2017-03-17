@@ -7,7 +7,7 @@ $(document).ready(function() {
 
    $("#reset").click(function () {
     location.reload();
-  });
+    });
 
   $("#reddit-widget").mouseup(function(){
     console.log("The div moved.");
@@ -16,7 +16,7 @@ $(document).ready(function() {
     console.log("xReddit", xValue, "yReddit", yValue);
     localStorage.setItem("xReddit", xValue);
     localStorage.setItem("yReddit", yValue);
-  });
+    });
 
   $("#youtube-widget").mouseup(function(){
     console.log("The div moved.");
@@ -25,7 +25,7 @@ $(document).ready(function() {
     console.log("xYoutube", xValue, "yYoutube", yValue);
     localStorage.setItem("xYoutube", xValue);
     localStorage.setItem("yYoutube", yValue);
-  });
+    });
 
   $("#bi-widget").mouseup(function(){
     console.log("The div moved.");
@@ -34,5 +34,33 @@ $(document).ready(function() {
     console.log("xBi", xValue, "yBi", yValue);
     localStorage.setItem("xBi", xValue);
     localStorage.setItem("yBi", yValue);
-  });
+    });
+
+  $("#espn-widget").mouseup(function(){
+    console.log("The div moved.");
+    var xValue = $("#espnwidget").position().left;
+    var yValue = $("#espnwidget").position().top;
+    console.log("xBi", xValue, "yBi", yValue);
+    localStorage.setItem("xBi", xValue);
+    localStorage.setItem("yBi", yValue);
+    });
+
+  $("#bloom-widget").mouseup(function(){
+    console.log("The div moved.");
+    var xValue = $("#bloom-widget").position().left;
+    var yValue = $("#bloom-widget").position().top;
+    console.log("xBi", xValue, "yBi", yValue);
+    localStorage.setItem("xBi", xValue);
+    localStorage.setItem("yBi", yValue);
+    });
+
+  $("#buzz-widget").mouseup(function(){
+    console.log("The div moved.");
+    var xValue = $("#buzz-widget").position().left;
+    var yValue = $("#buzz-widget").position().top;
+    console.log("xBi", xValue, "yBi", yValue);
+    localStorage.setItem("xBi", xValue);
+    localStorage.setItem("yBi", yValue);
+    });
+
 });

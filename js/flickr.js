@@ -10,30 +10,32 @@ function getURL(){
 
   $.get(url)
   .then( function(data) {
-    // var initialArray = data.photos.photo;
-    // var splice6  = initialArray.splice(6, 1);
-    // var splice10 = splice6.splice(10,1);
-    // var splice16 = splice10.splice(16,2);
-    // var splice20 = splice16.splice(20,2);
-    // var splice22 = splice20.splice(22,1);
-    // var splice25 = splice22.splice(25,2);
-    // var splice30 = splice25.splice(30,1);
-    // var photosArray = splice30.splice(38,2);
     var photosArray = data.photos.photo;
-    console.log(photosArray);
+    var indexToDelete = [1,3,4,6,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,32,33,34, 38,39,40,41,42,45,48,49]
+    let filterIndex = 0;
+    var filteredPhotos = photosArray.filter(f => {
+      if (indexToDelete.indexOf(filterIndex) === -1) {
+        filterIndex++
+        return true
+      } else {
+        filterIndex++
+        return false
+      }
+    })
+    console.log(filteredPhotos);
     // 6,9.11,18,19,24,25,28,32,33,39,48,49 = 13n
-    var random = Math.floor(Math.random() * photosArray.length)
+    var random = Math.floor(Math.random() * filteredPhotos.length)
     // console.log(random);
     var backgroundImageUrl = ""
-    for (var i = 0; i < photosArray.length; i++) {
+    for (var i = 0; i < filteredPhotos.length; i++) {
       if (random === i) {
-        var result = data.photos.photo[i];
+        // var result = data.photos.photo[i];
         // console.log(i);
-        // console.log(photosArray[0]);
-        var farmId = result.farm;
-        var serverId = result.server;
-        var photoID = result.id;
-        var secretId = result.secret;
+        // console.log(filteredPhotos[0]);
+        var farmId = filteredPhotos[i].farm;
+        var serverId = filteredPhotos[i].server;
+        var photoID = filteredPhotos[i].id;
+        var secretId = filteredPhotos[i].secret;
         backgroundImageUrl = "https://farm" + farmId + ".staticflickr.com/" + serverId + "/" + photoID + "_" + secretId + ".jpg";
         // changeBackground(backgroundImageUrl);
         $('body').css({'background-image': 'url(' + backgroundImageUrl + ')', 'background-size' : 'cover'});
