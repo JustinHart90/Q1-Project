@@ -12,6 +12,10 @@ div.icon-block {
 	font-size: inherit;
 }
 
+div.row.nav-row {
+  margin-bottom: 0px;
+}
+
 div.col.l12 {
   margin-top: 10px;
   width: 95%;
