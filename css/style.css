@@ -35,6 +35,19 @@ a#logo-container.brand-logo {
   padding: 5px 0px 0px 0;
 }*/
 
+#temperature {
+  color: white;
+  font-size: 1.25em;
+  margin-right: 10px;
+}
+
+#weather-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
 h5.center {
   color: white;
   background-color: black;
