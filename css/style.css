@@ -26,6 +26,10 @@ nav.lighten-1 {
   opacity: 0.5;
 }
 
+div.row.nav-row {
+  margin-top: 0px;
+}
+
 a#logo-container.brand-logo {
   padding-left: 35px;
 }
@@ -127,7 +131,7 @@ ul.collapsible.active {
 }
 
 div.collapsible-header.re-style.active {
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
   border: none;
   background-color: black;
@@ -135,7 +139,7 @@ div.collapsible-header.re-style.active {
 }
 
 div.collapsible-header.re-style {
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
   border: none;
   background-color: black;
