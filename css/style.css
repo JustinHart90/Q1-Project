@@ -35,9 +35,15 @@ a#logo-container.brand-logo {
   padding: 5px 0px 0px 0;
 }*/
 
+#date {
+  color: white;
+  font-size: 1em;
+  margin-right: 30px;
+}
+
 #temperature {
   color: white;
-  font-size: 1.25em;
+  font-size: 1em;
   margin-right: 10px;
 }
 
