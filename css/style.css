@@ -12,6 +12,23 @@ div.icon-block {
 	font-size: inherit;
 }
 
+.waves-effect.waves-light.btn {
+  background: transparent;
+  height: 60px;
+  width: 60px;
+}
+
+.waves-effect.waves-light.btn img {
+  padding: 0;
+  margin: 0;
+  left: 0px;
+}
+
+#calculator {
+  padding: 3px 500px 0px 0px;
+  margin: 0;
+}
+
 .container.innerContainer {
   width: 100%;
 }
@@ -28,6 +45,7 @@ nav.lighten-1 {
 
 div.row.nav-row {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 a#logo-container.brand-logo {
@@ -106,7 +124,7 @@ span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span
 }
 
 .newsUrl img {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 ul.collection {
@@ -202,9 +220,4 @@ div#player {
 
 nav div ul li a {
   font-family: roboto, arial;
-}
-
-a.newsUrl {
-  height: 90px;
-  width: 120px;
 }

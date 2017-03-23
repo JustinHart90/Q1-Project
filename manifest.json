@@ -1,23 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "HQ",
+  "name": "Test 2 - HQ",
   "description": "This extension loads a custom dashboard when a user adds a new tab or window",
-  "version": "1.1",
+  "version": "1.1.1",
 
   "icons": {
     "128": "html/HQ copy.png"
   },
   "browser_action": {
-    "default_title": "HQ - New tab explorer"
+    "default_title": "HQ - New Tab"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
-  },
-  "permissions": [
-    "bookmarks",
-    "identity",
-    "geolocation",
-    "http://*.google.com/"
-  ]
+  }
 }
