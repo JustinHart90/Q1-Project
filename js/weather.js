@@ -12,7 +12,6 @@ function getWeather(){
     var longDate = data.current_observation.local_time_rfc822;
     var shortDate = longDate.substr(0, longDate.indexOf('2017'));
     var resultsDate = shortDate + " 2017";
-    console.log(resultsTempString);
     $("#temperature").text(resultsTempString)
     $("#weather-icon").attr("src", resultsIconUrl)
     $("#date").text(resultsDate)

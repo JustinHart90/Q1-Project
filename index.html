@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="libs/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/notes.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <div class="container-fluid">
@@ -16,19 +17,29 @@
       <nav class="lighten-1" role="navigation">
           <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">hq</a>
             <ul class="right hide-on-med-and-down">
+              <li id="calculator">
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn" href="#modal1"><img height="50px" src="html/calc.png" title="Calculator"></a>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                  </div>
+                </div>
+              </li>
               <li id="date"></li>
               <li id="temperature"></li>
               <li><img src="" id="weather-icon"></li>
               <li><a id="changeBackground">Change Background</a></li>
-              <li><a href="#" id="reset">Reload Page</a></li>
             </ul>
-
             <ul id="nav-mobile" class="side-nav">
               <li><a href="#">Change Background</a></li>
             </ul>
-
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
             <ul class="side-nav" id="mobile-demo">
              <li><a href="about.html">About</a></li>
              <li><a href="services.html">Services</a></li>
@@ -42,6 +53,27 @@
         <div class="row">
           <div class="col l4 m12">
             <div class="row">
+              <ul class="collapsible" id="notes-widget" data-collapsible="accordion">
+                <li class="buffer-below-icon">
+                  <div id="notes-header"class="collapsible-header re-style header" background-color="none">
+                    <h5 class="center" height="40" padding="0px" width="auto">NOTES</h5>
+                    <input type="text" id="notesInput" placeholder="Title...">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                  </div>
+                  <div class="collapsible-body">
+                    <ul id="notes-list" class="collection">
+                      <li class="collection-item avatar notes-list-item">Hit the gym</li>
+                      <li class="collection-item avatar notes-list-item" class="checked">Pay bills</li>
+                      <li class="collection-item avatar notes-list-item">Meet George</li>
+                      <li class="collection-item avatar notes-list-item">Buy eggs</li>
+                      <li class="collection-item avatar notes-list-item">Read a book</li>
+                      <li class="collection-item avatar notes-list-item">Organize office</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
 
             </div>
           </div>
@@ -50,28 +82,28 @@
               <ul class="collapsible" id="youtube-widget" data-collapsible="accordion">
                 <li class="buffer-below-icon">
                   <div class="collapsible-header re-style" background-color="none">
-                    <h5 class="center"><img src="html/YouTube-Logo.png" height="70" padding="0px" width="auto"></h5>
+                    <h5 class="center"><img src="html/YouTube-Logo.png" height="60" padding="0px" width="auto"></h5>
                   </div>
                   <div class="collapsible-body">
                     <ul class="collection">
                       <li class="thumbnail collection-item avatar">
-                        <a id="thumbnail1" target="_blank" title="Click to watch" href=""><img id="video1" border="0" alt="Video 1" src="" width="120" height="90"></a>
+                        <a id="thumbnail1" target="_blank" title="Click to watch" href=""><img id="video1" border="0" alt="Video 1" src="" width="95" height="60"></a>
                         <span class="title" id="player1"></span>
                       </li>
                       <li class="thumbnail collection-item avatar">
-                        <a id="thumbnail2" target="_blank" title="Click to watch"  href=""><img id="video2" border="0" alt="Video 2" src="" width="120" height="90"></a>
+                        <a id="thumbnail2" target="_blank" title="Click to watch"  href=""><img id="video2" border="0" alt="Video 2" src="" width="95" height="60"></a>
                         <span class="title" id="player2"></span>
                       </li>
                       <li class="thumbnail collection-item avatar">
-                        <a id="thumbnail3" target="_blank" title="Click to watch"  href=""><img id="video3" border="0" alt="Video 3" src="" width="120" height="90"></a>
+                        <a id="thumbnail3" target="_blank" title="Click to watch"  href=""><img id="video3" border="0" alt="Video 3" src="" width="95" height="60"></a>
                         <span class="title" id="player3"></span>
                       </li>
                       <li class="thumbnail collection-item avatar">
-                        <a id="thumbnail4" target="_blank" title="Click to watch"  href=""><img id="video4" border="0" alt="Video 4" src="" width="120" height="90"></a>
+                        <a id="thumbnail4" target="_blank" title="Click to watch"  href=""><img id="video4" border="0" alt="Video 4" src="" width="95" height="60"></a>
                         <span class="title" id="player4"></span>
                       </li>
                       <li class="thumbnail collection-item avatar">
-                        <a id="thumbnail5" target="_blank" title="Click to watch"  href=""><img id="video5" border="0" alt="Video 5" src="" width="120" height="90"></a>
+                        <a id="thumbnail5" target="_blank" title="Click to watch"  href=""><img id="video5" border="0" alt="Video 5" src="" width="95" height="60"></a>
                         <span class="title" id="player5"></span>
                       </li>
                     </ul>
@@ -81,28 +113,28 @@
               <ul class="collapsible" id="espn-widget" data-collapsible="accordion">
                 <li class="buffer-below-icon">
                   <div class="collapsible-header re-style" background-color="none">
-                    <h5 class="center" height="75"><img src="https://tech.co/wp-content/uploads/2015/01/techco-1.png" height="70" padding="0px" width="auto"></h5>
+                    <h5 class="center" height="60"><img src="https://tech.co/wp-content/uploads/2015/01/techco-1.png" height="60" padding="0px" width="auto"></h5>
                   </div>
                   <div class="collapsible-body">
                     <ul class="collection">
                       <li class="collection-item avatar espnNews">
-                        <a class="newsUrl" id="espnUrl-1" target="_blank" title=""  href=""><img id="espnImgUrl-1" border="0" alt="Image 1" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="espnUrl-1" target="_blank" title=""  href=""><img id="espnImgUrl-1" border="0" alt="Image 1" src="" width="95" height="60"></a>
                         <span class="title" id="espn-1"></span>
                       </li>
                       <li class="collection-item avatar espnNews">
-                        <a class="newsUrl" id="espnUrl-2" target="_blank" title=""  href=""><img id="espnImgUrl-2" border="0" alt="Image 2" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="espnUrl-2" target="_blank" title=""  href=""><img id="espnImgUrl-2" border="0" alt="Image 2" src="" width="95" height="60"></a>
                         <span class="title" id="espn-2"></span>
                       </li>
                       <li class="collection-item avatar espnNews">
-                        <a class="newsUrl" id="espnUrl-3" target="_blank" title=""  href=""><img id="espnImgUrl-3" border="0" alt="Image 3" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="espnUrl-3" target="_blank" title=""  href=""><img id="espnImgUrl-3" border="0" alt="Image 3" src="" width="95" height="60"></a>
                         <span class="title" id="espn-3"></span>
                       </li>
                       <li class="collection-item avatar espnNews">
-                        <a class="newsUrl" id="espnUrl-4" target="_blank" title=""  href=""><img id="espnImgUrl-4" border="0" alt="Image 4" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="espnUrl-4" target="_blank" title=""  href=""><img id="espnImgUrl-4" border="0" alt="Image 4" src="" width="95" height="60"></a>
                         <span class="title" id="espn-4"></span>
                       </li>
                       <li class="collection-item avatar espnNews">
-                        <a class="newsUrl" id="espnUrl-5" target="_blank" title=""  href=""><img id="espnImgUrl-5" border="0" alt="Image 5" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="espnUrl-5" target="_blank" title=""  href=""><img id="espnImgUrl-5" border="0" alt="Image 5" src="" width="95" height="60"></a>
                         <span class="title" id="espn-5"></span>
                       </li>
                     </ul>
@@ -112,28 +144,28 @@
               <ul class="collapsible" id="buzzfeed-widget" data-collapsible="accordion">
                 <li class="buffer-below-icon">
                   <div class="collapsible-header re-style" background-color="none">
-                    <h5 class="center"><img src="https://barnraisersllc.com/wp-content/uploads/2015/12/buzzfeed-logo.png" height="70" padding="0px" width="auto"></h5>
+                    <h5 class="center"><img src="https://barnraisersllc.com/wp-content/uploads/2015/12/buzzfeed-logo.png" height="60" padding="0px" width="auto"></h5>
                   </div>
                   <div class="collapsible-body">
                     <ul class="collection">
                       <li class="collection-item avatar buzzNews">
-                        <a class="newsUrl" id="buzzUrl-1" target="_blank" title=""  href=""><img id="buzzImgUrl-1" border="0" alt="Image 1" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="buzzUrl-1" target="_blank" title=""  href=""><img id="buzzImgUrl-1" border="0" alt="Image 1" src="" width="95" height="60"></a>
                         <span class="title" id="buzz-1"></span>
                       </li>
                       <li class="collection-item avatar buzzNews">
-                        <a class="newsUrl" id="buzzUrl-2" target="_blank" title=""  href=""><img id="buzzImgUrl-2" border="0" alt="Image 2" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="buzzUrl-2" target="_blank" title=""  href=""><img id="buzzImgUrl-2" border="0" alt="Image 2" src="" width="95" height="60"></a>
                         <span class="title" id="buzz-2"></span>
                       </li>
                       <li class="collection-item avatar buzzNews">
-                        <a class="newsUrl" id="buzzUrl-3" target="_blank" title=""  href=""><img id="buzzImgUrl-3" border="0" alt="Image 3" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="buzzUrl-3" target="_blank" title=""  href=""><img id="buzzImgUrl-3" border="0" alt="Image 3" src="" width="95" height="60"></a>
                         <span class="title" id="buzz-3"></span>
                       </li>
                       <li class="collection-item avatar buzzNews">
-                        <a class="newsUrl" id="buzzUrl-4" target="_blank" title=""  href=""><img id="buzzImgUrl-4" border="0" alt="Image 4" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="buzzUrl-4" target="_blank" title=""  href=""><img id="buzzImgUrl-4" border="0" alt="Image 4" src="" width="95" height="60"></a>
                         <span class="title" id="buzz-4"></span>
                       </li>
                       <li class="collection-item avatar buzzNews">
-                        <a class="newsUrl" id="buzzUrl-5" target="_blank" title=""  href=""><img id="buzzImgUrl-5" border="0" alt="Image 5" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="buzzUrl-5" target="_blank" title=""  href=""><img id="buzzImgUrl-5" border="0" alt="Image 5" src="" width="95" height="60"></a>
                         <span class="title" id="buzz-5"></span>
                       </li>
                     </ul>
@@ -147,28 +179,28 @@
               <ul class="collapsible" id="bi-widget" data-collapsible="accordion">
                 <li class="buffer-below-icon">
                   <div class="collapsible-header re-style" background-color="none">
-                    <h5 class="center"><img src="https://static.businessinsider.com/image/544e9ea56bb3f7554c911e8d-800-440/bilogo" height="70" padding="0px" width="auto"></h5>
+                    <h5 class="center"><img src="https://static.businessinsider.com/image/544e9ea56bb3f7554c911e8d-800-440/bilogo" height="60" padding="0px" width="auto"></h5>
                   </div>
                   <div class="collapsible-body">
                     <ul class="collection">
                       <li class="collection-item avatar biNews">
-                        <a class="newsUrl" id="newsUrl-1" target="_blank" title=""  href=""><img id="imageUrl-1" border="0" alt="Image 1" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="newsUrl-1" target="_blank" title=""  href=""><img id="imageUrl-1" border="0" alt="Image 1" src="" width="95" height="60"></a>
                         <span class="title" id="bi-1"></span>
                       </li>
                       <li class="collection-item avatar biNews">
-                        <a class="newsUrl" id="newsUrl-2" target="_blank" title=""  href=""><img id="imageUrl-2" border="0" alt="Image 2" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="newsUrl-2" target="_blank" title=""  href=""><img id="imageUrl-2" border="0" alt="Image 2" src="" width="95" height="60"></a>
                         <span class="title" id="bi-2"></span>
                       </li>
                       <li class="collection-item avatar biNews">
-                        <a class="newsUrl" id="newsUrl-3" target="_blank" title=""  href=""><img id="imageUrl-3" border="0" alt="Image 3" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="newsUrl-3" target="_blank" title=""  href=""><img id="imageUrl-3" border="0" alt="Image 3" src="" width="95" height="60"></a>
                         <span class="title" id="bi-3"></span>
                       </li>
                       <li class="collection-item avatar biNews">
-                        <a class="newsUrl" id="newsUrl-4" target="_blank" title=""  href=""><img id="imageUrl-4" border="0" alt="Image 4" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="newsUrl-4" target="_blank" title=""  href=""><img id="imageUrl-4" border="0" alt="Image 4" src="" width="95" height="60"></a>
                         <span class="title" id="bi-4"></span>
                       </li>
                       <li class="collection-item avatar biNews">
-                        <a class="newsUrl" id="newsUrl-5" target="_blank" title=""  href=""><img id="imageUrl-5" border="0" alt="Image 5" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="newsUrl-5" target="_blank" title=""  href=""><img id="imageUrl-5" border="0" alt="Image 5" src="" width="95" height="60"></a>
                         <span class="title" id="bi-5"></span>
                       </li>
                     </ul>
@@ -178,28 +210,28 @@
               <ul class="collapsible" id="bloom-widget" data-collapsible="accordion">
                 <li class="buffer-below-icon">
                   <div class="collapsible-header re-style" background-color="none">
-                    <h5 class="center"><img src="https://images-na.ssl-images-amazon.com/images/I/41CvMN%2BbeNL.png" height="70" padding="0px" width="auto"></h5>
+                    <h5 class="center"><img src="https://images-na.ssl-images-amazon.com/images/I/41CvMN%2BbeNL.png" height="60" padding="0px" width="auto"></h5>
                   </div>
                   <div class="collapsible-body">
                     <ul class="collection">
                       <li class="collection-item avatar bloomNews">
-                        <a class="newsUrl" id="bloomUrl-1" target="_blank" title=""  href=""><img id="bloomImageUrl-1" border="0" alt="Image 1" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="bloomUrl-1" target="_blank" title=""  href=""><img id="bloomImageUrl-1" border="0" alt="Image 1" src="" width="95" height="60"></a>
                         <span class="title" id="bloom-1"></span>
                       </li>
                       <li class="collection-item avatar bloomNews">
-                        <a class="newsUrl" id="bloomUrl-2" target="_blank" title=""  href=""><img id="bloomImageUrl-2" border="0" alt="Image 2" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="bloomUrl-2" target="_blank" title=""  href=""><img id="bloomImageUrl-2" border="0" alt="Image 2" src="" width="95" height="60"></a>
                         <span class="title" id="bloom-2"></span>
                       </li>
                       <li class="collection-item avatar bloomNews">
-                        <a class="newsUrl" id="bloomUrl-3" target="_blank" title=""  href=""><img id="bloomImageUrl-3" border="0" alt="Image 3" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="bloomUrl-3" target="_blank" title=""  href=""><img id="bloomImageUrl-3" border="0" alt="Image 3" src="" width="95" height="60"></a>
                         <span class="title" id="bloom-3"></span>
                       </li>
                       <li class="collection-item avatar bloomNews">
-                        <a class="newsUrl" id="bloomUrl-4" target="_blank" title=""  href=""><img id="bloomImageUrl-4" border="0" alt="Image 4" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="bloomUrl-4" target="_blank" title=""  href=""><img id="bloomImageUrl-4" border="0" alt="Image 4" src="" width="95" height="60"></a>
                         <span class="title" id="bloom-4"></span>
                       </li>
                       <li class="collection-item avatar bloomNews">
-                        <a class="newsUrl" id="bloomUrl-5" target="_blank" title=""  href=""><img id="bloomImageUrl-5" border="0" alt="Image 5" src="" width="120" height="75"></a>
+                        <a class="newsUrl" id="bloomUrl-5" target="_blank" title=""  href=""><img id="bloomImageUrl-5" border="0" alt="Image 5" src="" width="95" height="60"></a>
                         <span class="title" id="bloom-5"></span>
                       </li>
                     </ul>
@@ -210,7 +242,7 @@
                 <li class="buffer-below-icon">
                   <div class="collapsible-header re-style" background-color="none">
                     <h5 class="center">
-                      <img src="https://2.bp.blogspot.com/-e2U-hXLpzVU/TZC34dfe5KI/AAAAAAAACrI/kwu2YIdL1pU/s400/out-of-the-loop.gif" height="70" padding="0px" width="auto">
+                      <img src="https://2.bp.blogspot.com/-e2U-hXLpzVU/TZC34dfe5KI/AAAAAAAACrI/kwu2YIdL1pU/s400/out-of-the-loop.gif" height="60" padding="0px" width="auto">
                     </h5>
                   </div>
                   <div class="collapsible-body">
@@ -255,13 +287,13 @@
   <!--  Scripts -->
   <script type="text/javascript" src="js/newtab.js"></script>
   <script type="text/javascript" src="js/flickr.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
   <script type="text/javascript" src="js/reddit.js"></script>
   <script type="text/javascript" src="js/youtube.js"></script>
   <script type="text/javascript" src="js/biNews.js"></script>
   <script type="text/javascript" src="js/bloomberg.js"></script>
   <script type="text/javascript" src="js/espn.js"></script>
   <script type="text/javascript" src="js/buzzfeed.js"></script>
-  <script type="text/javascript" src="js/weather.js"></script>
 
   </body>
 </html>

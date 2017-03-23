@@ -24,7 +24,6 @@ function getRedditNews(){
         }
       }
     }
-    console.log(resultsDescr);
 
     $('#title1').text(resultsTitle[0]);
     $('#title2').text(resultsTitle[1]);
