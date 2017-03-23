@@ -56,8 +56,7 @@ $(document).ready(function() {
   }
 
   // Add a "checked" symbol when clicking on a list item
-  var list = $('#notes-list');
-  list.addEventListener('click', function(ev) {
+  $('#notes-list').click( function(ev) {
     if (ev.target.tagName === 'LI') {
       ev.target.classList.toggle('checked');
     }

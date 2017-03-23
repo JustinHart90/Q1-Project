@@ -29,6 +29,11 @@ div.icon-block {
   margin: 0;
 }
 
+a.waves-effect.waves-light.btn img {
+  padding-top: 5px;
+  height: 45px;
+}
+
 .container.col.l12 {
   margin-top: 15px;
   width: 90%;
