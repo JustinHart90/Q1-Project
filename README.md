@@ -5,14 +5,14 @@ This extension loads a custom home page populated with recent and trending news,
 See deployed site here:  https://hq-new-tab-homepage.firebaseapp.com/
 Watch tutorial here:
 
-### APIs
+## APIs
 * Flickr  (background images)
 * Wunderground  (weather & date)
 * Google  (YouTube)
 * Reddit  (Out of the loop)
 * NewsApi  (ESPN, BuzzFeed, Business Insider, Bloomberg)
 
-#### Technology
+## Technology
 * Javascript
 * HTML
 * CSS
@@ -20,10 +20,10 @@ Watch tutorial here:
 * JSON
 * Materialize
 
-##### App Design
+## App Design
 * First Wireframe
 * Second Wireframe
 * Initial Schedule
 
-###### Contact Me
+## Contact Me
 * LinkedIn
