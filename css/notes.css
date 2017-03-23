@@ -1,3 +1,23 @@
+#notes-widget {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+div#notes-header {
+  padding: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#notes-input-area {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  border: none;
+  height: 196px;
+  padding: 10px 15px;
+}
+
 /* Remove margins and padding from the list */
 #notes-list {
     margin: 0;
@@ -90,13 +110,13 @@
 
 /* Style the "Add" button */
 .addBtn {
-    padding: 10px;
-    width: 25%;
+    padding: 0px;
+    width: 18%;
     background: #d9d9d9;
     color: #555;
     float: left;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     cursor: pointer;
     transition: 0.3s;
 }
