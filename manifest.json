@@ -3,7 +3,7 @@
 
   "name": "HQ",
   "description": "This extension loads a custom dashboard when a user adds a new tab or window",
-  "version": "1.1.1",
+  "version": "1.1.2",
 
   "icons": {
     "128": "html/HQ copy.png"
