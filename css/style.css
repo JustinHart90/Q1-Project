@@ -14,8 +14,8 @@ div.icon-block {
 
 .waves-effect.waves-light.btn {
   background: transparent;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: auto;
 }
 
 .waves-effect.waves-light.btn img {
@@ -25,13 +25,18 @@ div.icon-block {
 }
 
 #calculator {
-  padding: 3px 500px 0px 0px;
+  padding: 3px 300px 0px 0px;
+  margin: 0;
+}
+
+#meme-generator {
+  padding: 3px 0px 0px 0px;
   margin: 0;
 }
 
 a.waves-effect.waves-light.btn img {
-  padding-top: 5px;
-  height: 45px;
+  height: 50px;
+  width: auto;
 }
 
 .container.col.l12 {
