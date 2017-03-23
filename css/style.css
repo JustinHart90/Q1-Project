@@ -25,11 +25,11 @@ div.icon-block {
 }
 
 #calculator {
-  padding: 3px 300px 0px 0px;
+  padding: 3px 200px 0px 0px;
   margin: 0;
 }
 
-#meme-generator {
+#meme-generator, #joke-generator {
   padding: 3px 0px 0px 0px;
   margin: 0;
 }
@@ -46,7 +46,7 @@ a.waves-effect.waves-light.btn img {
 
 nav.lighten-1 {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 div.row {
