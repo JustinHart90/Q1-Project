@@ -16,14 +16,15 @@ function getESPNnews(){
 
     while (resultsCounter < 6) {
       for (var i = 0; i < newsArray.length; i++) {
-        if (newsArray[i].url !== null && newsArray[i].urlToImage !== null && newsArray[i].url.indexOf("https") == 0 && newsArray[i].urlToImage.indexOf("https") == 0 &&
-        getESPNsecureUrl(newsArray[i].url) === "secure" && getESPNsecureUrl(newsArray[i].urlToImage) === "secure") {
-          resultsTitle.push(newsArray[i].title);
-          resultsDescr.push(newsArray[i].description);
-          resultsUrl.push(newsArray[i].url);
-          resultsImgUrl.push(newsArray[i].urlToImage);
-          resultsCounter++;
-        }
+        // var urlSecure = newsArray[i].url;
+        // var urlToImageSecure = newsArray[i].urlToImage;
+        // console.log(newsArray[i].url)
+        // console.log(newsArray[i].urlToImage);
+        resultsTitle.push(newsArray[i].title);
+        resultsDescr.push(newsArray[i].description);
+        resultsUrl.push(newsArray[i].url);
+        resultsImgUrl.push(newsArray[i].urlToImage);
+        resultsCounter++;
       }
     }
 
@@ -57,13 +58,9 @@ function getESPNnews(){
 }
 
 function getESPNsecureUrl(url) {
-  if (url.indexOf("https://s.") == 0) {
+  if (url.indexOf("https://s.") !== -1) {
     return "not secure";
-  } else if (url.indexOf("https") == 0) {
-    return "secure";
-  } else if (url.indexOf("http://s.") == 0) {
-    return "not secure";
-  } else if (url.indexOf("http") == 0) {
+  } else if (url.indexOf("https") !== -1) {
     return "secure";
   } else {
     return "not secure";

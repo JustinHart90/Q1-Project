@@ -10,23 +10,22 @@ function getURL(){
 
   $.get(url)
   .then( function(data) {
-    var sixPhotos = [];
+    var fivePhotos = [];
     var photosArray = data.photos.photo;
-    sixPhotos.push(photosArray[0]);
-    sixPhotos.push(photosArray[10]);
-    sixPhotos.push(photosArray[31]);
-    sixPhotos.push(photosArray[35]);
-    sixPhotos.push(photosArray[36]);
-    sixPhotos.push(photosArray[43]);
+    fivePhotos.push(photosArray[0]);
+    fivePhotos.push(photosArray[10]);
+    fivePhotos.push(photosArray[35]);
+    fivePhotos.push(photosArray[36]);
+    fivePhotos.push(photosArray[43]);
 
-    var random = Math.floor(Math.random() * sixPhotos.length)
+    var random = Math.floor(Math.random() * fivePhotos.length)
     var backgroundImageUrl = ""
-    for (var i = 0; i < sixPhotos.length; i++) {
+    for (var i = 0; i < fivePhotos.length; i++) {
       if (random === i) {
-        var farmId = sixPhotos[i].farm;
-        var serverId = sixPhotos[i].server;
-        var photoID = sixPhotos[i].id;
-        var secretId = sixPhotos[i].secret;
+        var farmId = fivePhotos[i].farm;
+        var serverId = fivePhotos[i].server;
+        var photoID = fivePhotos[i].id;
+        var secretId = fivePhotos[i].secret;
 
         backgroundImageUrl = "https://farm" + farmId + ".staticflickr.com/" + serverId + "/" + photoID + "_" + secretId + ".jpg";
 
