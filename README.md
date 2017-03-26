@@ -1,5 +1,4 @@
-![alt text][logo]
-[logo]: http://www.hqraleigh.com/public/hq-raleigh-theme/images/hq-logo-black.png  
+![alt text](http://www.hqraleigh.com/public/hq-raleigh-theme/images/hq-logo-black.png "Logo")  
 # HQ:  custom home page Google Chrome extension
 
 ## Description
