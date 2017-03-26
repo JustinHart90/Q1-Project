@@ -3,6 +3,15 @@ body {
   z-index: -1;
 }
 
+.external-links {
+  margin-left: 13px;
+  margin-top: 25px;
+  padding: 5px;
+  background-color: black;
+  /*color: white;*/
+  opacity: 0.8;
+}
+
 div.icon-block {
   padding: 1px 5px 5px 1px;
   margin-top: 5px;
@@ -12,8 +21,31 @@ div.icon-block {
 	font-size: inherit;
 }
 
-div.row.nav-row {
-  margin-bottom: 0px;
+.waves-effect.waves-light.btn {
+  background: transparent;
+  height: 50px;
+  width: auto;
+}
+
+.waves-effect.waves-light.btn img {
+  padding: 0;
+  margin: 0;
+  left: 0px;
+}
+
+#calculator {
+  padding: 3px 175px 0px 0px;
+  margin: 0;
+}
+
+#meme-generator, #joke-generator {
+  padding: 3px 0px 0px 0px;
+  margin: 0;
+}
+
+a.waves-effect.waves-light.btn img {
+  height: 50px;
+  width: auto;
 }
 
 div.col.l12 {
@@ -23,21 +55,16 @@ div.col.l12 {
 
 nav.lighten-1 {
   background-color: black;
-  opacity: 0.5;
-  align-items: center;
+  opacity: 0.7;
 }
 
-#temperature {
-  color: white;
-  font-size: 1.25em;
-  margin-right: 10px;
+div.row {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-#weather-icon {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
-  margin-right: 60px;
+div.row.nav-row {
+  margin-bottom: 5px;
 }
 
 a#logo-container.brand-logo {
@@ -49,12 +76,30 @@ a#logo-container.brand-logo {
   padding: 5px 0px 0px 0;
 }*/
 
+#date {
+  color: white;
+  font-size: 1em;
+  margin-right: 30px;
+}
+
+#temperature {
+  color: white;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+#weather-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
 h5.center {
   color: white;
   background-color: black;
   font-family: roboto, arial;
-  font-size: 1.85em;
-  font-weight: bold;
+  font-size: 1.65em;
   opacity: 0.9;
   width: 98.5%;
   max-width: 370px;
@@ -66,8 +111,6 @@ h5.center {
 h5.center {
   padding: 5px 0px 2px 0px;
   line-height: 1;
-  /*justify-content: center;
-  text-align: center;*/
 }
 
 div > a#logo-container {
@@ -80,25 +123,27 @@ div.bookmarks {
   width: 85%;
 }
 
-/* Reddit Api - NEWS */
+/* Reddit Api */
 span#title1.title, span#title2.title, span#title3.title, span#title4.title, span#title5.title {
  font-size: 1.2em;
 }
 
+/* YouTube, Business Insider, Bloomberg */
 span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title, span#bi-1.title, span#bi-2.title, span#bi-3.title, span#bi-4.title, span#bi-5.title, span#bloom-1.title, span#bloom-2.title, span#bloom-3.title, span#bloom-4.title, span#bloom-5.title  {
   font-size: 1.2em;
   margin-left: 10px;
   padding-top: 7px;
 }
 
-span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title, span#buzz-1.title, span#buzz-2.title, span#buzz-3.title, span#buzz-4.title, span#buzz-5.title {
+/* ESPN, Buzzfeed */
+span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title, span#buzz-1.title, span#buzz-2.title, span#buzz-3.title, span#buzz-4.title, span#buzz-5.title  {
   font-size: 1.2em;
   margin-left: 10px;
   padding-top: 7px;
 }
 
 .newsUrl img {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 ul.collection {
@@ -123,7 +168,7 @@ ul.collapsible.active {
 }
 
 div.collapsible-header.re-style.active {
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
   border: none;
   background-color: black;
@@ -131,7 +176,7 @@ div.collapsible-header.re-style.active {
 }
 
 div.collapsible-header.re-style {
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
   border: none;
   background-color: black;
@@ -163,6 +208,7 @@ li.thumbnail.collection-item.avatar {
   display: inline-flex;
   line-height: 1.25;
   min-height: 50px;
+  font-size: 0.8em;
 }
 
 li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collection-item.avatar.espnNews, li.collection-item.avatar.buzzNews {
@@ -172,6 +218,7 @@ li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collec
   display: inline-flex;
   line-height: 1.25;
   min-height: 50px;
+  font-size: 0.8em;
 }
 
 div.section {
@@ -192,13 +239,4 @@ div#player {
 
 nav div ul li a {
   font-family: roboto, arial;
-}
-
-a.newsUrl {
-  height: 90px;
-  width: 120px;
-}
-
-.buffer-below-icon {
-  margin-bottom: 10px;
 }

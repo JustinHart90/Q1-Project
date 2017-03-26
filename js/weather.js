@@ -9,9 +9,12 @@ function getWeather(){
   .then( function(data) {
     var resultsIconUrl = getSecureWeatherUrl(data.current_observation.icon_url);
     var resultsTempString = data.current_observation.temperature_string;
-    console.log(resultsTempString);
+    var longDate = data.current_observation.local_time_rfc822;
+    var shortDate = longDate.substr(0, longDate.indexOf('2017'));
+    var resultsDate = shortDate + " 2017";
     $("#temperature").text(resultsTempString)
     $("#weather-icon").attr("src", resultsIconUrl)
+    $("#date").text(resultsDate)
   })
   .catch(function(error) {
     console.log(error);
