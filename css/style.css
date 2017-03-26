@@ -12,6 +12,10 @@ body {
   opacity: 0.8;
 }
 
+div#notes-header.header {
+  height: 55px;
+}
+
 div.icon-block {
   padding: 1px 5px 5px 1px;
   margin-top: 5px;
@@ -97,7 +101,6 @@ a#logo-container.brand-logo {
 
 h5.center {
   color: white;
-  background-color: black;
   font-family: roboto, arial;
   font-size: 1.65em;
   opacity: 0.9;
