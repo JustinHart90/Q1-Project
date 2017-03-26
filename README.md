@@ -1,5 +1,5 @@
 ![alt text][logo]
-[logo]: /css/hq-image.jpg  
+[logo]: http://www.hqraleigh.com/public/hq-raleigh-theme/images/hq-logo-black.png  
 # HQ:  custom home page Google Chrome extension
 
 ## Description
@@ -32,4 +32,4 @@ The page is populated with recent and trending news from six different sources, 
 ## Contact Me
 * LinkedIn
 
-![alt text](~/Desktop/HQ-image.png "Screen shot")
+![alt text](https://lh3.googleusercontent.com/TVicHrYb31wzL_nscznt9bP8MHthi_xefSk8jgcjYTCWmgUREe5w7rRbXypoTFGVGYUM5NibaZo=s1280-h800-e365-rw "Screen shot")
