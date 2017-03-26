@@ -35,4 +35,4 @@ The page is populated with recent and trending news from six different sources, 
 ## Contact Me
 * [LinkedIn](https://www.linkedin.com/in/justin-hart-35269028/)
 
-![alt text](https://lh3.googleusercontent.com/TVicHrYb31wzL_nscznt9bP8MHthi_xefSk8jgcjYTCWmgUREe5w7rRbXypoTFGVGYUM5NibaZo=s1280-h800-e365-rw "Screen shot")
+![alt text](https://lh3.googleusercontent.com/KThHOf7E0l9lECBXimO_yGtlb3a7jbWL6rfOmKAJtER0oS-AHdywRovQR-sokzIU7Rd_SLKlmw=s1280-h800-e365-rw "Screen shot")
