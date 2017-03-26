@@ -1,6 +1,7 @@
 <p align="center">
   <img src="http://www.hqraleigh.com/public/hq-raleigh-theme/images/hq-logo-black.png" alt="Logo"/>  
 </p>
+
 # HQ: custom home page Google Chrome extension
 
 ## Description
