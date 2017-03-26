@@ -52,6 +52,14 @@ a.waves-effect.waves-light.btn img {
   width: auto;
 }
 
+ul.collection li a {
+  color: white;
+}
+
+/*ul.collection li.collection-item.avatar {
+  display: flex;
+}*/
+
 div.col.l12 {
   margin-top: 10px;
   width: 95%;
@@ -145,9 +153,9 @@ span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span
   padding-top: 7px;
 }
 
-.newsUrl img {
+/*.newsUrl img {
   margin-top: 2px;
-}
+}*/
 
 ul.collection {
   /*background-color: black;*/
@@ -223,6 +231,8 @@ li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collec
   min-height: 50px;
   font-size: 0.8em;
 }
+
+ul.collection li.collection-item.avatar a img {}
 
 div.section {
   margin-bottom: 5px;
