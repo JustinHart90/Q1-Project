@@ -3,13 +3,13 @@ body {
   z-index: -1;
 }
 
-.external-links {
-  margin-left: 13px;
-  margin-top: 25px;
-  padding: 5px;
+a.external-links {
+  margin-left: -10px;
+  padding: 6px;
   background-color: black;
-  /*color: white;*/
+  color: white;
   opacity: 0.8;
+  position: absolute;
 }
 
 div#notes-header.header {
