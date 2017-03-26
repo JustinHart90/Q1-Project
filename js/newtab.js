@@ -2,8 +2,8 @@ $(document).ready(function() {
    $(".button-collapse").sideNav();
    $("div.col.s12.m4").draggable();
    $('.collapsible').draggable();
-   $("div.col.s12.m4").resizable();
-   $('.collapsible').resizable();
+   $("ul#notes-widget").resizable();
+  //  $('.collapsible').resizable();
    $('.collapsible').collapsible();
    $("#accordion.ui-accordion").accordion();
    $('#modal').modal();
