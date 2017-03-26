@@ -10,6 +10,7 @@ The page is populated with recent and trending news from six different sources, 
 
 * See deployed site here: [HQ:  Custom home page headquarters](https://hq-new-tab-homepage.firebaseapp.com/)
 * Watch tutorial here: [HQ Tutorial](https://youtu.be/Ee31xgw3joU)
+* Download in Chrome Store here: [HQ Download](https://chrome.google.com/webstore/detail/hq/dhfnnhfkopfomjhpbpdombahfoiiomfo)
 
 ## APIs
 * Flickr  (background images)
