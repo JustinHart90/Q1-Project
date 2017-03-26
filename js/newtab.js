@@ -1,7 +1,9 @@
 $(document).ready(function() {
-   $(".button-collapse").sideNav()
+   $(".button-collapse").sideNav();
    $("div.col.s12.m4").draggable();
    $('.collapsible').draggable();
+   $("ul#notes-widget").resizable();
+  //  $('.collapsible').resizable();
    $('.collapsible').collapsible();
    $("#accordion.ui-accordion").accordion();
 
@@ -34,33 +36,59 @@ $(document).ready(function() {
     console.log("xBi", xValue, "yBi", yValue);
     localStorage.setItem("xBi", xValue);
     localStorage.setItem("yBi", yValue);
-    });
+  });
 
-  $("#espn-widget").mouseup(function(){
-    console.log("The div moved.");
-    var xValue = $("#espnwidget").position().left;
-    var yValue = $("#espnwidget").position().top;
-    console.log("xBi", xValue, "yBi", yValue);
-    localStorage.setItem("xBi", xValue);
-    localStorage.setItem("yBi", yValue);
-    });
+  // Create a "close" button and append it to each list item
+  var myNodelist = $("#notes-list li");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("span");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
 
-  $("#bloom-widget").mouseup(function(){
-    console.log("The div moved.");
-    var xValue = $("#bloom-widget").position().left;
-    var yValue = $("#bloom-widget").position().top;
-    console.log("xBi", xValue, "yBi", yValue);
-    localStorage.setItem("xBi", xValue);
-    localStorage.setItem("yBi", yValue);
-    });
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    };
+  }
 
-  $("#buzz-widget").mouseup(function(){
-    console.log("The div moved.");
-    var xValue = $("#buzz-widget").position().left;
-    var yValue = $("#buzz-widget").position().top;
-    console.log("xBi", xValue, "yBi", yValue);
-    localStorage.setItem("xBi", xValue);
-    localStorage.setItem("yBi", yValue);
-    });
+  // Add a "checked" symbol when clicking on a list item
+  $('#notes-list').click( function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
 
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("notesInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("notes-list").appendChild(li);
+    }
+    document.getElementById("notesInput").value = "";
+
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      };
+    }
+  }
 });

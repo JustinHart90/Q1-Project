@@ -8,7 +8,6 @@ $(document).ready(function() {
       key: 'AIzaSyBhlUXvCcyHqTly485MZ7G0VLdULlxyWOw'},
       function(data) {
         $.each(data.items, function(i, item) {
-          console.log(item);
           var id = item.contentDetails.relatedPlaylists.uploads;
           getVids(id);
         })

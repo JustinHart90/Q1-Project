@@ -16,8 +16,8 @@ function getBInews(){
     for (var i = 0; i < 5; i++) {
       resultsTitle.push(newsArray[i].title);
       resultsDescr.push(newsArray[i].description);
-      resultsUrl.push(getSecureUrl(newsArray[i].url));
-      resultsImgUrl.push(getSecureUrl(newsArray[i].urlToImage));
+      resultsUrl.push(getBIsecureUrl(newsArray[i].url));
+      resultsImgUrl.push(getBIsecureUrl(newsArray[i].urlToImage));
     }
 
     $('#bi-1').text(resultsTitle[0]);
@@ -49,7 +49,7 @@ function getBInews(){
   })
 }
 
-function getSecureUrl(url) {
+function getBIsecureUrl(url) {
   if (url.indexOf("https") == 0) {
     return url;
   } else if (url.indexOf("http") == 0) {
