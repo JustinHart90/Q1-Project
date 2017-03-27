@@ -9,7 +9,7 @@ This extension loads a custom home page for people that want to use Google Chrom
 The page is populated with recent and trending news from six different sources, a note pad, the current date and outside temperature, and access to a calculator, random joke generator and a meme generator.
 
 * See deployed site here: [HQ:  Custom home page headquarters](https://hq-new-tab-homepage.firebaseapp.com/)
-* Watch tutorial here: [HQ Tutorial](https://youtu.be/Ee31xgw3joU)
+* Watch tutorial here: [HQ Tutorial](https://youtu.be/Sc100ZYr1K8)
 * Download in Chrome Store here: [HQ Download](https://chrome.google.com/webstore/detail/hq/dhfnnhfkopfomjhpbpdombahfoiiomfo)
 
 ## APIs
