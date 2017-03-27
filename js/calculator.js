@@ -15,6 +15,30 @@ $(document).ready(function () {
   $('#equals').click(function() {
     calculate()
   });
+
+  // $('.buttons').keypress( function(e) {
+  //   var key = e.which;
+  //   // enter
+  //   switch (key) {
+  //     case: 13
+  //       return;
+  //       break;
+  //     case: 14
+  //       return;
+  //       break;
+  //     case: 14
+  //       return;
+  //       break;
+  //     case: 14
+  //       return;
+  //       break;
+  //     case: 14
+  //       return;
+  //       break;
+  //     default:
+  //       return;
+  //   }
+  // })
 })
 
 function calculate() {
