@@ -136,20 +136,18 @@ div.bookmarks {
 
 /* Reddit Api */
 span#title1.title, span#title2.title, span#title3.title, span#title4.title, span#title5.title {
- font-size: 1.2em;
+ font-size: 1.05em;
 }
 
 /* YouTube, Business Insider, Bloomberg */
 span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title, span#bi-1.title, span#bi-2.title, span#bi-3.title, span#bi-4.title, span#bi-5.title, span#bloom-1.title, span#bloom-2.title, span#bloom-3.title, span#bloom-4.title, span#bloom-5.title  {
   font-size: 1.2em;
-  margin-left: 10px;
   padding-top: 7px;
 }
 
 /* ESPN, Buzzfeed */
 span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title, span#buzz-1.title, span#buzz-2.title, span#buzz-3.title, span#buzz-4.title, span#buzz-5.title  {
   font-size: 1.2em;
-  margin-left: 10px;
   padding-top: 7px;
 }
 
@@ -232,7 +230,10 @@ li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collec
   font-size: 0.8em;
 }
 
-ul.collection li.collection-item.avatar a img {}
+ul.collection li.collection-item.avatar a img {
+  float: left;
+  margin-right: 10px;
+}
 
 div.section {
   margin-bottom: 5px;
