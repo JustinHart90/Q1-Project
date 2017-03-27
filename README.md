@@ -29,6 +29,7 @@ The page is populated with recent and trending news from six different sources, 
 
 ## App Design
 * [Schedule (WBS)](html/HQ-Project-Schedule.png)
+* [User Stories](https://www.pivotaltracker.com/n/projects/1990137)
 * [First Wireframe](css/wireframe-1.png)
 * [Second Wireframe](css/wireframe-2.png)
 
