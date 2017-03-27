@@ -28,7 +28,7 @@ The page is populated with recent and trending news from six different sources, 
 * Materialize
 
 ## App Design
-* [Schedule (WBS)](css/wbs-schedule.png)
+* [Schedule (WBS)](html/HQ-Project-Schedule.png)
 * [First Wireframe](css/wireframe-1.png)
 * [Second Wireframe](css/wireframe-2.png)
 
