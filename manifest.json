@@ -1,17 +1,29 @@
 {
   "manifest_version": 2,
-
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjzNBaVvlK8VpVICSnfAytiqh+k1scKMatm+2+tWIA2dnBFDXljwsAd1jYOCFR6mA5yRKRDdTXJ+SOdRA4YqPi/2an/pmmuxvHapbXYkZutH67hMq/MDxaIKkap7KB5MWPI37KatXRLpZarw+y/eJk0t8gHtWW4c4gl43gdjXa0Bckt4dSXw7Tfh9ANsRRsRlmtPdsKZCHIUFVQc/T1TxjUmQXIoMXnG5QXraTOMK/xRnvtK6F3SwgNFH4a8vESAsa/qtX1mO2ikT6gQat0z6IuCVf4RJazKo4CgjYuP/DHV5Bg8KBFcyRY0N9kCeFqcVh1I3kkXXqBhdWLTdAlyd/wIDAQAB",
   "name": "HQ",
   "description": "This extension loads a custom dashboard when a user adds a new tab or window",
-  "version": "1.1.3",
-
+  "version": "1.1.4",
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": [
+    "identity",
+    "https://ssl.gstatic.com/",
+    "https://www.googleapis.com/",
+    "https://accounts.google.com/"
+  ],
   "icons": {
-    "128": "html/HQ copy.png"
+    "128": "img/HQ copy.png"
   },
   "browser_action": {
     "default_title": "New Tab Headquarters"
   },
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    "newtab": "../views/index.hbs"
+  },
+  "oauth2": {
+    "client_id": "556974443493-b9khrm41l2h66vjvm0l0tgq5qdh9vrls.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/drive"]
   }
 }
