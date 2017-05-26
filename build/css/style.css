@@ -1,0 +1,256 @@
+body {
+  opacity: 0.95;
+  z-index: -1;
+}
+
+a.external-links {
+  margin-left: -10px;
+  padding: 6px;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  position: absolute;
+}
+
+div#notes-header.header {
+  height: 55px;
+}
+
+div.icon-block {
+  padding: 1px 5px 5px 1px;
+  margin-top: 5px;
+  background-color: none;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.waves-effect.waves-light.btn {
+  background: transparent;
+  height: 50px;
+  width: auto;
+}
+
+.waves-effect.waves-light.btn img {
+  padding: 0;
+  margin: 0;
+  left: 0px;
+}
+
+#calculator {
+  padding: 3px 175px 0px 0px;
+  margin: 0;
+}
+
+#meme-generator, #joke-generator {
+  padding: 3px 0px 0px 0px;
+  margin: 0;
+}
+
+a.waves-effect.waves-light.btn img {
+  height: 50px;
+  width: auto;
+}
+
+ul.collection li a {
+  color: white;
+}
+
+/*ul.collection li.collection-item.avatar {
+  display: flex;
+}*/
+
+div.col.l12 {
+  margin-top: 10px;
+  width: 95%;
+}
+
+nav.lighten-1 {
+  background-color: black;
+  opacity: 0.7;
+}
+
+div.row {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.row.nav-row {
+  margin-bottom: 5px;
+}
+
+a#logo-container.brand-logo {
+  padding-left: 35px;
+}
+
+/*div.row {
+  margin: 0px 0px 5px 0px;
+  padding: 5px 0px 0px 0;
+}*/
+
+#date {
+  color: white;
+  font-size: 1em;
+  margin-right: 30px;
+}
+
+#temperature {
+  color: white;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+#weather-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
+h5.center {
+  color: white;
+  font-family: roboto, arial;
+  font-size: 1.65em;
+  opacity: 0.9;
+  width: 98.5%;
+  max-width: 370px;
+  min-width: 370px;
+  margin: 0px 0px 0px 5px;
+  height: 80px;
+}
+
+h5.center {
+  padding: 5px 0px 2px 0px;
+  line-height: 1;
+}
+
+div > a#logo-container {
+  font-family: arial, roboto;
+}
+
+div.bookmarks {
+  margin-left: 7%;
+  font-size: 2em;
+  width: 85%;
+}
+
+/* Reddit Api */
+span#title1.title, span#title2.title, span#title3.title, span#title4.title, span#title5.title {
+ font-size: 1.05em;
+}
+
+/* YouTube, Business Insider, Bloomberg */
+span#player1.title, span#player2.title, span#player3.title, span#player4.title, span#player5.title, span#bi-1.title, span#bi-2.title, span#bi-3.title, span#bi-4.title, span#bi-5.title, span#bloom-1.title, span#bloom-2.title, span#bloom-3.title, span#bloom-4.title, span#bloom-5.title  {
+  font-size: 1.2em;
+  padding-top: 7px;
+}
+
+/* ESPN, Buzzfeed */
+span#espn-1.title, span#espn-2.title, span#espn-3.title, span#espn-4.title, span#espn-5.title, span#buzz-1.title, span#buzz-2.title, span#buzz-3.title, span#buzz-4.title, span#buzz-5.title  {
+  font-size: 1.2em;
+  padding-top: 7px;
+}
+
+/*.newsUrl img {
+  margin-top: 2px;
+}*/
+
+ul.collection {
+  /*background-color: black;*/
+  opacity: 0.95;
+  border: none;
+  margin: 0px 0px 3px;
+}
+
+ul.collapsible {
+  background-color: black;
+  opacity: 0.8;
+  border: none;
+  margin: 0;
+}
+
+ul.collapsible.active {
+  background-color: black;
+  opacity: 0.8;
+  border: none;
+  margin: 0;
+}
+
+div.collapsible-header.re-style.active {
+  margin-top: 5px;
+  padding: 0;
+  border: none;
+  background-color: black;
+  opacity: 0.95;
+}
+
+div.collapsible-header.re-style {
+  margin-top: 5px;
+  padding: 0;
+  border: none;
+  background-color: black;
+  opacity: 0.95;
+}
+
+div.collapsible-body {
+  margin: 0;
+  padding: 0;
+  /*background-color: black;*/
+  opacity: 0.95;
+}
+
+li.collection-item.avatar {
+  left: 5px;
+  padding: 5px 20px 5px 5px;
+  line-height: 1.25;
+  background-color: black;
+  font-family: roboto, arial;
+  color: white;
+  opacity: 0.95;
+  min-height: 50px;
+}
+
+li.thumbnail.collection-item.avatar {
+  left: 5px;
+  margin: 0px;
+  padding: 0px 5px 0px 0px;
+  display: inline-flex;
+  line-height: 1.25;
+  min-height: 50px;
+  font-size: 0.8em;
+}
+
+li.collection-item.avatar.biNews, li.collection-item.avatar.bloomNews, li.collection-item.avatar.espnNews, li.collection-item.avatar.buzzNews {
+  left: 5px;
+  margin: 0px;
+  padding: 5px 5px 5px 5px;
+  display: inline-flex;
+  line-height: 1.25;
+  min-height: 50px;
+  font-size: 0.8em;
+}
+
+ul.collection li.collection-item.avatar a img {
+  float: left;
+  margin-right: 10px;
+}
+
+div.section {
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+/*div.widget-background {
+  background-color: black;
+  opacity: 1.0;
+  z-index: 1;
+}*/
+
+/* YouTube api*/
+div#player {
+  display: inline-block;
+}
+
+nav div ul li a {
+  font-family: roboto, arial;
+}

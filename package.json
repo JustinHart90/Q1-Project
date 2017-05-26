@@ -1,0 +1,31 @@
+{
+  "name": "HQ",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"http://www.hqraleigh.com/public/hq-raleigh-theme/images/hq-logo-black.png\" alt=\"Logo\"/>   </p>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinHart90/Q1-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinHart90/Q1-Project/issues"
+  },
+  "homepage": "https://github.com/JustinHart90/Q1-Project#readme",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-scripts": "^1.0.6"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
