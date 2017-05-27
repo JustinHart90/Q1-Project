@@ -14,10 +14,4 @@ function clock() {
   )
 }
 
-// function getTime() {
-//   var rawDate = String(new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'}))
-//   var slimDate = rawDate.substring(0, " ")
-//   return slimDate;
-// }
-
 setInterval(clock, 1000)
