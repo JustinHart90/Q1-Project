@@ -1,69 +1,59 @@
-$(document).ready(function () {
-  $('.buttons > span').click(function() {
-    console.log("click");
-    $('#screen').append($(this).text())
-  });
+$(document).ready(function(){
+  var number = "";
+  var number1 = "";
+  var number2 = "";
+  var screenResult = "";
+  var operators = ["+", "-", "*", "/"]
+  $("span").not("#clear, #equals").click(function(){
+   number += $(this).text();
+		$("#screen").text(number);
+  })
 
-  $('#zero').click(function() {
-    $('#screen').append($(this).text())
-  });
+  $("#clear").click(function(){
+    number = ""
+    $("#screen").text(number);
+  })
 
-  $('#clear').click(function() {
-    $('#screen').text(" ")
-  });
-
-  $('#equals').click(function() {
-    calculate()
-  });
-
-  // $('.buttons').keypress( function(e) {
-  //   var key = e.which;
-  //   // enter
-  //   switch (key) {
-  //     case: 13
-  //       return;
-  //       break;
-  //     case: 14
-  //       return;
-  //       break;
-  //     case: 14
-  //       return;
-  //       break;
-  //     case: 14
-  //       return;
-  //       break;
-  //     case: 14
-  //       return;
-  //       break;
-  //     default:
-  //       return;
-  //   }
-  // })
+  $("#equals").click(function(){
+    number=number.replace("x", "*")
+    number=number.replace("\xF7", "/")
+    count = 0
+    for (var i =0; i < number.length; i++){
+      for (var j = 0; j< operators.length; j++){
+        if (number[i] === operators[j]){
+          count++
+          var oper = operators[j]
+          var op = number.indexOf(operators[j])
+          number1 = number.slice(0, op)
+          number2 = number.slice(op+1, number.length)
+          number1 = parseInt(number1)
+          number2 = parseInt(number2)
+          if (count !== 1){
+            $("#screen").text("Error")
+          }
+          else if(oper === "-"){
+            $("#screen").text(number1 - number2)
+          }
+          else if(oper === "*"){
+            $("#screen").text(number1 * number2)
+          }
+          else if (oper === "/"){
+            $("#screen").text(number1 / number2)
+          }
+          else if (oper === "+"){
+            $("#screen").text(number1 + number2)
+          }
+          else {
+            $("#screen").text("Error")
+          }
+        }
+      }
+    }
+    if ($("#screen").text() === "Infinity"){
+      $("#screen").text("Error")
+    }
+    if($("#screen").text() === "NaN"){
+      $("#screen").text("Error")
+    }
+  })
 })
-
-function calculate() {
-  var mathString = $('#screen').text();
-  mathString = checkString(mathString)
-  console.log(mathString);
-  mathString = mathString.replace('=', '');
-  mathString = mathString.replace('x', '*');
-  mathString = mathString.replace('÷', '/');
-  console.log(mathString);
-  if (mathString != "Error") {
-    mathString = eval(mathString)
-  }
-  if (mathString === Infinity) {
-    mathString = "Error"
-  }
-  console.log(mathString);
-  $('#screen').text(mathString)
-}
-
-function checkString (mathString) {
-  console.log(mathString);
-  if (isNaN(mathString[0]) || isNaN(mathString[mathString.length - 2])) {
-    return "Error"
-  } else {
-    return mathString
-  }
-}
