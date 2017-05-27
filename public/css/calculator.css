@@ -1,11 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:700|Orbitron);
 
-body {
-  background: none;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
-  width: 100%;
+div#calculator-modal.modal {
+  border-radius: 50px !important;
+}
+
+#calculator-modal-content, div.modal {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 50px !important;
+}
+
+a.modal-action.modal-close.waves-effect.waves-green.btn-flat, h4#calculator-header {
+  color: white;
+}
+
+.modal .modal-footer, .modal-header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 50px !important;
 }
 
 #calculator {
@@ -27,22 +41,22 @@ body {
   background: #EF5D5D;
   border: none;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 600;
-  height: 23px;
+  height: 20px;
   overflow: hidden;
-  padding: 12px 15px;
+  padding: 2px 7px;
   width: 265px;
   z-index: 1;
 }
 
 #zero {
-  width: 225px;
+  width: 217px;
 }
 
 #clear {
   background: #CF7C43;
-  width: 147px;
+  width: 143px;
 }
 
 #clear:active {
@@ -50,16 +64,16 @@ body {
 }
 
 #equals {
-  height: 89px;
+  height: 53px;
 }
 
 #buttons-container {
-  padding: 30px 0 0 15px;
+  padding: 15px 0 0 5px;
 }
 
 .l-row {
   position: absolute;
-  top: 354px;
+  top: 283px;
 }
 
 .buttons {
@@ -75,9 +89,9 @@ body {
   float: left;
   font-family: 'Oswald', sans-serif;
   width: 70px;
-  height: 40px;
-  margin: 0 7px 11px 0;
-  line-height: 40px;
+  height: 25px;
+  margin: 0 3px 5px 0;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -88,5 +102,5 @@ body {
 }
 
 .operator {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }

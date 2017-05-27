@@ -6,6 +6,9 @@ $(document).ready(function() {
   $('.collapsible').collapsible();
   $("#accordion.ui-accordion").accordion();
 
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal').modal();
+
   document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
   // document.getElementById("reddit-widget").position().left = localStorage.getItem("xReddit");
   // document.getElementById("reddit-widget").position().top = localStorage.getItem("yReddit");

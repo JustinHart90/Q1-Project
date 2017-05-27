@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>HQ - New tab explorer</title>
+  <title>homepage headquarters</title>
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="images/HQ-pic.png">
 
@@ -12,49 +12,89 @@
   <link href="libs/materialize.css" type="text/css" rel="stylesheet"/>
   <link href="css/style.css" type="text/css" rel="stylesheet"/>
   <link href="css/notes.css" type="text/css" rel="stylesheet"/>
+  <link href="css/calculator.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row nav-row">
       <nav class="lighten-1">
-          <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">hq</a>
-            <ul class="right hide-on-med-and-down">
-              <li id=joke-generator>
-                <a class="waves-effect waves-light btn" href="html/joke.html" target="_blank"><img src="https://lh3.googleusercontent.com/yS6g6rsd1xX-vw3N_lzPjZ3QPXopAtsSUnzz6d-SpzTV4alGq-KOpi2ugZXyqTMsq_E=w170" title="Joke-Generator" alt="Joke Generator"></a>
-              </li>
-              <li id=meme-generator>
-                <a class="waves-effect waves-light btn" href="html/meme.html" target="_blank"><img src="https://lh3.googleusercontent.com/sckj85IJpdCaX95_R3AXaMjsCQz7DSaKZ7trpb48XRCFiBNfMjJ0ZCXndezKBKXJ6QmV=w300" title="Meme-Generator" alt="Meme-Generator"></a>
-              </li>
-              <li id="calculator">
-                <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn" href="html/calculator.html" target="_blank"><img src="images/calc.png" title="Calculator" alt="Calculator"></a>
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal">
-                  <div class="modal-content">
-                    <h4>Calculator</h4>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                  </div>
-                </div>
-              </li>
-              <li id="date"></li>
-              <li id="temperature"></li>
-              <li><img id="weather-icon" alt="weather-icon"></li>
-              <li><a id="changeBackground">Change Background</a></li>
-            </ul>
-            <ul id="nav-mobile" class="side-nav">
-              <li><a href="#">Change Background</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="side-nav" id="mobile-demo">
-             <li><a href="about.html">About</a></li>
-             <li><a href="services.html">Services</a></li>
-             <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <div class="nav-wrapper">
+            <div class="nav-left">
+              <a id="logo-container" href="#">hq</a>
+            </div>
+            <div class="nav-middle hide-on-med-and-down">
+              <ul>
+                <li id=joke-generator>
+                  <a class="waves-effect waves-light btn" href="html/joke.html" target="_blank"><img src="https://lh3.googleusercontent.com/yS6g6rsd1xX-vw3N_lzPjZ3QPXopAtsSUnzz6d-SpzTV4alGq-KOpi2ugZXyqTMsq_E=w170" title="Joke-Generator" alt="Joke Generator"></a>
+                </li>
+                <li id=meme-generator>
+                  <a class="waves-effect waves-light btn" href="html/meme.html" target="_blank"><img src="https://lh3.googleusercontent.com/sckj85IJpdCaX95_R3AXaMjsCQz7DSaKZ7trpb48XRCFiBNfMjJ0ZCXndezKBKXJ6QmV=w300" title="Meme-Generator" alt="Meme-Generator"></a>
+                </li>
+                <li id="calculator-button">
+                  <!-- Trigger Calculator Modal -->
+                  <a class="waves-effect waves-light btn" href="#calculatorModal"><img src="images/calc.png" title="Calculator" alt="Calculator"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-right">
+              <ul class="right hide-on-med-and-down">
+                <li id="date"></li>
+                <li id="temperature"></li>
+                <li><img id="weather-icon" alt="weather-icon"></li>
+                <li><a id="changeBackground">Change Background</a></li>
+              </ul>
+              <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Change Background</a></li>
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="side-nav" id="mobile-demo">
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
     </div>
+    <!-- BEGIN CALCULATOR MODAL -->
+    <div id="calculatorModal" class="modal">
+      <div class="modal-content" id="calculator-modal-content">
+        <div class="modal-header">
+          <h4 id="calculator-header">CALCULATOR</h4>
+        </div>
+        <div id="calculator">
+          <div id="screen-container">
+            <div id="screen"></div>
+          </div>
+          <div id="buttons-container">
+            <div class="buttons">
+              <span class="operator" id="clear">C</span>
+              <span class="operator">÷</span>
+              <span class="operator">x</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span class="operator">-</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span class="operator">+</span>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span class="operator" id="equals">=</span>
+              <div class="l-row">
+                <span id="zero">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+    <!-- END CALCULATOR MODAL -->
     <div class="row">
       <div class="col l12">
         <div class="row">
@@ -266,6 +306,7 @@
 
   <!--  Scripts -->
   <script type="text/javascript" src="js/newtab.js"></script>
+  <script type="text/javascript" src="js/calculator.js"></script>
   <script type="text/javascript" src="js/backgroundImage.js"></script>
   <script type="text/javascript" src="js/weather.js"></script>
   <script type="text/javascript" src="js/reddit.js"></script>
