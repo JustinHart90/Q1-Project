@@ -3,7 +3,6 @@ $(document).ready(function() {
   $("div.col.s12.m4").draggable();
   $('.collapsible').draggable();
   $("ul#notes-widget").resizable();
- //  $('.collapsible').resizable();
   $('.collapsible').collapsible();
   $("#accordion.ui-accordion").accordion();
 
