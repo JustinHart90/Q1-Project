@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    console.log("ready")
     $('.cleanButton').click(function() {
-      console.log('clicked')
       getCleanJoke()
     })
     // $('.programButton').click(function() {
@@ -15,8 +13,7 @@ $(document).ready(function() {
         url1 = url1 +
         $.get(url1)
             .then(function(data) {
-              console.log(data);
-                updateClean(data)
+              updateClean(data)
             })
       }
     // function getProgrammerJoke() {
@@ -35,11 +32,9 @@ $(document).ready(function() {
     function updateClean(data, permalink) {
       var array = data.data.children
       var random = Math.floor(Math.random() * array.length)
-      console.log(random);
       for (var i = 0; i < array.length; i++) {
         if (random === i) {
           array = data.data.children[i]
-          console.log(i);
         }
       }
         $('h2').text(data.data.children[i].data.title)

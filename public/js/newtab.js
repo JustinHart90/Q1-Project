@@ -2,6 +2,8 @@ $(document).ready(function() {
   $(".button-collapse").sideNav();
   $("div.col.s12.m4").draggable();
   $('.collapsible').draggable();
+  $('#clock').draggable();
+  $('#notes-widget').draggable();
   $("ul#notes-widget").resizable();
   $('.collapsible').collapsible();
   $("#accordion.ui-accordion").accordion();
@@ -10,13 +12,14 @@ $(document).ready(function() {
   $('.modal').modal();
 
   document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
-  // document.getElementById("reddit-widget").position().left = localStorage.getItem("xReddit");
-  // document.getElementById("reddit-widget").position().top = localStorage.getItem("yReddit");
-  // document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
-  // document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
-  // document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
-  // document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
-  // document.getElementById("notes-input-area").innerHTML = localStorage.getItem("notes");
+
+  if (localStorage.getItem("xReddit")) {
+    $('#reddit-widget').css({'position': 'url(../images/forrest.jpg)', 'background-size' : 'cover'})
+    $("#reddit-widget").position().left = localStorage.getItem("xReddit");
+    $("#reddit-widget").position().top = localStorage.getItem("yReddit");
+  }
+
+
 
    $("#reset").click(function () {
     location.reload();
@@ -52,6 +55,33 @@ $(document).ready(function() {
     console.log("xBi", xValue, "yBi", yValue);
     localStorage.setItem("xBi", xValue);
     localStorage.setItem("yBi", yValue);
+  });
+
+  $("#espn-widget").mouseup(function(){
+    console.log("The div moved.");
+    var xValue = $("#espn-widget").position().left;
+    var yValue = $("#espn-widget").position().top;
+    console.log("xEspn", xValue, "yEspn", yValue);
+    localStorage.setItem("xEspn", xValue);
+    localStorage.setItem("yEspn", yValue);
+  });
+
+  $("#bloom-widget").mouseup(function(){
+    console.log("The div moved.");
+    var xValue = $("#bloom-widget").position().left;
+    var yValue = $("#bloom-widget").position().top;
+    console.log("xBloom", xValue, "yBloom", yValue);
+    localStorage.setItem("xBloom", xValue);
+    localStorage.setItem("yBloom", yValue);
+  });
+
+  $("#buzz-widget").mouseup(function(){
+    console.log("The div moved.");
+    var xValue = $("#buzz-widget").position().left;
+    var yValue = $("#buzz-widget").position().top;
+    console.log("xBuzz", xValue, "yBuzz", yValue);
+    localStorage.setItem("xBuzz", xValue);
+    localStorage.setItem("yBuzz", yValue);
   });
 
   // Create a "close" button and append it to each list item
