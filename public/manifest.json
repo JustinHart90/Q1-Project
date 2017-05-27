@@ -6,12 +6,12 @@
   "version": "1.1.3",
 
   "icons": {
-    "128": "public/images/HQ copy.png"
+    "128": "images/HQ copy.png"
   },
   "browser_action": {
     "default_title": "New Tab Headquarters"
   },
   "chrome_url_overrides": {
-    "newtab": "public/index.html"
+    "newtab": "index.html"
   }
 }
