@@ -1,0 +1,33 @@
+body{
+  background-color: grey;
+}
+
+h2 {
+
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.img {
+  height : auto;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+}
+
+button:focus {
+  background-color: inherit;
+}
+
+nav {
+  background-color: indianred;
+}
