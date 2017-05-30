@@ -10,14 +10,14 @@ function getPic() {
   if (pic) {
     $('body').css({'background-image': 'url(' + pic + ')', 'background-size' : 'cover'})
   } else {
-    $('body').css({'background-image': 'url(../images/forrest.jpg)', 'background-size' : 'cover'})
+    $('body').css({'background-image': 'url(public/images/forrest.jpg)', 'background-size' : 'cover'})
   }
 }
 
 var index = 0
 
 function changePic(){
-  var photosArray = ['../images/forrest.jpg', '../images/picTest.jpg', '../images/beachRocks.jpg', '../images/mountainClouds.jpg', '../images/winterMountains.jpg', '../images/boardwalk.jpg', '../images/skyline.jpg', '../images/cityscape.jpg'];
+  var photosArray = ['public/images/forrest.jpg', 'public/images/picTest.jpg', 'public/images/beachRocks.jpg', 'public/images/mountainClouds.jpg', 'public/images/winterMountains.jpg', 'public/images/boardwalk.jpg', 'public/images/skyline.jpg', 'public/images/cityscape.jpg'];
   var backgroundImage = photosArray[index]
 
   $('body').css({'background-image': 'url(' + backgroundImage + ')', 'background-size' : 'cover'});
