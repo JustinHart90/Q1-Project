@@ -2,7 +2,7 @@
   "name": "HQ",
   "version": "1.0.0",
   "description": "<p align=\"center\">   <img src=\"http://www.hqraleigh.com/public/hq-raleigh-theme/images/hq-logo-black.png\" alt=\"Logo\"/>   </p>",
-  "main": "app.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
